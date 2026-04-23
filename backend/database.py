@@ -10,7 +10,6 @@ try:
     client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
     db = client.module47_pathology
 
-    # --- Collections ---
     patients_col     = db.patients
     doctors_col      = db.doctors
     lab_tests_col    = db.lab_tests
@@ -19,12 +18,11 @@ try:
     mdt_sessions_col = db.mdt_sessions
     users_col        = db.users
 
-    client.admin.command('ping')
-    print("✅ M47: MongoDB connection successful")
+    print("✅ M47: MongoDB collections initialized")
 
 except Exception as e:
-    print(f"❌ M47: MongoDB connection failed: {e}")
-    raise
+    print(f"❌ M47: MongoDB setup failed: {e}")
+    raise  # still raise so you see the real error in logs
 
 
 def init_db_constraints():
