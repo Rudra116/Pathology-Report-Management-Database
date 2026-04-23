@@ -3,7 +3,9 @@ import requests
 import pandas as pd
 from datetime import date, datetime
 
-BASE_URL = "http://127.0.0.1:8000"
+# To this:
+import os
+BASE_URL = os.environ.get("BASE_URL", "http://127.0.0.1:8000")
 
 st.set_page_config(page_title="M47 Pathology Dashboard", page_icon="🔬", layout="wide", initial_sidebar_state="expanded")
 
