@@ -1,5 +1,8 @@
 # M47 Pathology Report Management System
 
+## Live Project Link
+https://pathology-report-management-database-f2sgzjvasnncfsqshqupo4.streamlit.app
+
 ## Project Structure
 ```
 project/
@@ -57,8 +60,6 @@ streamlit run frontend/dashboard.py
 # Dashboard at http://localhost:8501
 ```
 
----
-
 ## 🔑 Login Credentials (Dummy Data)
 
 | Username   | Password    | Role        |
@@ -68,8 +69,6 @@ streamlit run frontend/dashboard.py
 | drpatel    | doctor123   | Doctor      |
 | labtech1   | lab123      | Technician  |
 
----
-
 ## 📋 Pre-loaded Dummy Data
 
 - **10 patients** (P1001–P1010)
@@ -78,8 +77,6 @@ streamlit run frontend/dashboard.py
 - **10 lab orders** (LO-001–LO-010)
 - **8 pathology reports** (mix of critical and routine)
 - **4 MDT sessions** with treatment plans
-
----
 
 ## 🏥 System Processes (DFD)
 
@@ -91,9 +88,7 @@ streamlit run frontend/dashboard.py
 | 4.0 | MDT Meeting Module (Record decisions) |
 | 5.0 | Prognostic & Treatment Analysis |
 
----
-
-## 📊 TNM Auto-Scoring Logic.
+## 📊 TNM Auto-Scoring Logic
 
 | Factor | Points |
 |--------|--------|
