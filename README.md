@@ -93,7 +93,7 @@ streamlit run frontend/dashboard.py
 
 ---
 
-## 📊 TNM Auto-Scoring Logic
+## 📊 TNM Auto-Scoring Logic.
 
 | Factor | Points |
 |--------|--------|
